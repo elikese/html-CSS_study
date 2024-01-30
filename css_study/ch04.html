@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .container{
+            border-radius: 10px;
+            border: #999 1px solid;
+            height: 700px;
+            width: 850px;
+            background-color: #03c75a;
+            position: relative;
+        }
+        .float-box{
+            border-radius: 20px;
+            border: #03c75a 1px solid;
+            height: 350px;
+            width: 400px;
+            background-color: whitesmoke;
+            position: absolute;
+            top: -25px;
+            right: -100px;
+        }
+        .main-box{
+            border-radius: 10px;
+            border: rgba(255, 255, 255, 0.623) 1px solid;
+            width: 848px;
+            height: 590px;
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+        }
+        .x-button{
+            transform: translate(50%,-50%);
+            top: 50%;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            right: 50%;
+            vertical-align: text-top;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container box">
+        <div class="main-box box">
+            <div class="float-box box">
+                <div class="x-button">X</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

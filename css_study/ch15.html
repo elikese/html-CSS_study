@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Tahoma;
+        }
+
+        .container {
+            height: 500px;
+            width: 300px;
+        }
+
+        .loop-box {
+            height: 70px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-box {
+            height: 35px;
+            width: 300px;
+            background-color: white;
+            border: 1px solid #777;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 5px;
+        }
+
+        .content-box {
+            height: 35px;
+            width: 300px;
+            border: 1px solid #777;
+            background-color: #eeeeee;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 5px;
+        }
+        .content-box > div {
+            padding: 0px 10px;
+            border: 1px solid #777;
+            margin: 2px;
+            font-size: 10px;
+            color: white;
+            background-color: #3552a1;
+        }
+
+        .content-box > div:hover {
+            background-color: white;
+            cursor: pointer;
+            color: black;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loop-box">
+            <div class="title-box">Language</div>
+            <div class="content-box">
+                <div>JavaScript</div>
+                <div>TypeScript</div>
+                <div>C++</div>
+                <div>Java</div>
+                <div>Python</div>
+            </div>
+        </div>
+        <div class="loop-box">
+            <div class="title-box">Web Front-End</div>
+            <div class="content-box">
+                <div>React</div>
+                <div>Vue.js</div>
+            </div>
+        </div>
+        <div class="loop-box">
+            <div class="title-box">Web Back-End</div>
+            <div class="content-box">
+                <div>JSP</div>
+                <div>Spring</div>
+                <div>Spring Boot</div>
+            </div>
+        </div>
+        <div class="loop-box">
+            <div class="title-box">DataBase</div>
+            <div class="content-box">
+                <div>Oracle</div>
+                <div>MySQL</div>
+                <div>MS SQL Server</div>
+            </div>
+        </div>
+        <div class="loop-box">
+            <div class="title-box">etc</div>
+            <div class="content-box">
+                <div>Adobe Photoshop</div>
+                <div>Adobe Premiere Pro</div>
+                <div>Pro Tools</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

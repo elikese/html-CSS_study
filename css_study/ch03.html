@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .main-box {
+        margin-top: 400px;
+        border: 1px solid #222;
+        width: 800px;
+        height: 1200px;
+        /* position: relative; */
+    }
+
+    .box {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+    }
+    .sub-box1 {
+        position: sticky;
+        top: 300px;
+        left: 600px;
+        /* 브라우저가 좌표 기준이 된다. 단, 범위가 부모박스의 크기까지로 제한된다.*/
+    }
+    .sub-box2 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        /* fixed 브라우저가 좌표 기준이 된다.*/
+    }
+    .sub-box3 {
+        position: absolute; 
+        /* position이 있는 부모가 좌표 기준이 된다. */
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .sub-box4 {
+        position: relative;
+        right: 10px;
+        bottom: 10px;
+        /* 원래위치가 좌표기준 */
+    }
+</style>
+
+</head>
+<body>
+    <div class="main-box">
+        <div class="box sub-box1"></div>
+        <div class="box sub-box2"></div>
+        <div class="box sub-box3"></div>
+        <div class="box sub-box4"></div>
+    </div>
+</body>
+</html>
